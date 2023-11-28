@@ -1,0 +1,13 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: "Inter", "sans-serif";
+	line-height: 1;
+}
+
+.container {
+	padding-inline: 24px;
+}

@@ -1,0 +1,23 @@
+.header {
+	display: flex;
+	width: 100%;
+	padding-block: 24px;
+	background-color: white;
+	border-bottom: 1px solid #f2f4f5;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.title {
+	font-family: "Inter";
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.date {
+	font-size: 16px;
+}
+
+.date::first-letter {
+	text-transform: uppercase;
+}
