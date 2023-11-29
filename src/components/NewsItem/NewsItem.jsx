@@ -12,7 +12,6 @@ const NewsItem = ({ item }) => {
 			></div>
 			<div className={styles.info}>
 				<h3 className={styles.title}>{item.title}</h3>
-				<p className={styles.description}>{item.description}</p>
 				<p className={styles.extra}>
 					{formatTimeAgo(new Date(item.published))} от {item.author}
 				</p>
