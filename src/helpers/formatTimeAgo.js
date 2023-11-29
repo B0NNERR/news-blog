@@ -20,22 +20,18 @@ export const formatTimeAgo = (dateString) => {
 
 	if (secondPast > 86400) {
 		const value = Math.floor(secondPast / 86400);
-		let valueString = "";
-		switch (value) {
-			case value === 1:
-				valueString = "день";
-				break;
-			case arrayOfNumbers.includes(value):
-				valueString = "дня";
-				break;
-			case String(value).length > 1 &&
-				arrayOfNumbers.includes(String(value).at(-1)):
-				valueString = "дня";
-				break;
-			default:
-				valueString = "дней";
-				break;
+		let valueString = "дней";
+		if (value === 1) {
+			valueString = "день";
 		}
+		if (
+			arrayOfNumbers.includes(value) ||
+			(String(value).length > 1 &&
+				arrayOfNumbers.includes(String(value).at(-1)))
+		) {
+			valueString = "дня";
+		}
+
 		return `${value} ${valueString} назад`;
 	}
 };
