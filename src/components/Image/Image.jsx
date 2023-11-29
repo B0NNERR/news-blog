@@ -3,6 +3,7 @@ import styles from "./styles.module.css";
 
 const Image = ({ image }) => {
 	const [isError, setIsError] = useState(false);
+	console.log("IMAGE", image);
 	return (
 		<div className={styles.wrapper}>
 			{image != "None" && image != null && !isError ? (
