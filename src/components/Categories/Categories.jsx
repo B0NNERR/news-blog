@@ -6,7 +6,6 @@ const Categories = ({ categories, setSelectedCategory, selectedCategory }) => {
 			className={styles.categories}
 			onWheel={(e) => {
 				const delta = e.deltaY;
-				console.log(e);
 				e.screenX += 1;
 			}}
 		>
