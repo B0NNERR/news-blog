@@ -20,7 +20,7 @@ const Image = ({ image }) => {
 					}}
 				/>
 			) : (
-				<div className={styles["no-photo"]}>Новость без фото 😅</div>
+				<div className={styles["no-photo"]}>No photo 😅</div>
 			)}
 		</div>
 	);
