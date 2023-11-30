@@ -14,7 +14,7 @@ const NewsBanner = ({ news }) => {
 				<>
 					<h2 className={styles.title}>{item.title}</h2>
 					<p className={styles.extra}>
-						{formatTimeAgo(item.published)} от {item.author}
+						{formatTimeAgo(item.published)} by {item.author}
 					</p>
 				</>
 			) : null}
