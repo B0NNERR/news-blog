@@ -4,8 +4,8 @@ export const formatDate = (date = null) => {
 	};
 
 	if (date) {
-		return date.toLocaleDateString("ru", options);
+		return date.toLocaleDateString("en", options);
 	} else {
-		return new Date().toLocaleDateString("ru", options);
+		return new Date().toLocaleDateString("en", options);
 	}
 };

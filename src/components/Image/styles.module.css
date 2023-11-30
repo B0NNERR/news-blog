@@ -38,4 +38,5 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: rgb(112, 112, 112);
+	white-space: nowrap;
 }
