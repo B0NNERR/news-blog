@@ -1,0 +1,59 @@
+.pagination {
+	display: flex;
+	width: 100%;
+	gap: 12px;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	font-family: "Inter", sans-serif;
+	font-weight: 700;
+}
+
+.page-number {
+	padding: 8px;
+}
+
+.page-number,
+.arrow {
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+.list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.active {
+	background-color: #f2f4f5;
+	color: #000;
+	animation: pulse 3s linear infinite;
+}
+
+.page-number:disabled,
+.arrow:disabled {
+	cursor: unset;
+}
+
+@keyframes pulse {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(10deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	75% {
+		transform: rotate(-10deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
