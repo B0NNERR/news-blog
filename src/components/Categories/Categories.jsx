@@ -9,7 +9,7 @@ const Categories = ({ categories, setSelectedCategory, selectedCategory }) => {
 				e.screenX += 1;
 			}}
 		>
-			{categories.map((category) => {
+			{["all", ...categories].map((category) => {
 				{
 					return (
 						<button
