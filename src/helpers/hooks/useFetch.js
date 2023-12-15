@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const useFetch = (fetchFunction, params) => {
+const useFetch = (fetchFunction, params = null) => {
 	const [data, setData] = useState(null);
 	const [isLoading, setIsLoadding] = useState(false);
 	const [error, setError] = useState(null);

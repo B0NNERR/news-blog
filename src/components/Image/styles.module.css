@@ -5,6 +5,7 @@
 	position: relative;
 	background-color: #f2f4f5;
 	box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.25);
+	overflow: hidden;
 }
 
 .image {
@@ -16,18 +17,6 @@
 	object-fit: cover;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1272px) {
-	.wrapper {
-		padding-top: 50%;
-	}
-}
-
-@media screen and (min-width: 1273px) {
-	.wrapper {
-		padding-top: 40%;
-	}
-}
-
 .no-photo {
 	font-family: "Inter", sans-serif;
 	font-size: 2rem;
@@ -36,7 +25,10 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%) rotate(45deg);
 	background-color: rgb(112, 112, 112);
 	white-space: nowrap;
+	width: 150%;
+	color: rgba(0, 0, 0, 0.5);
+	text-align: center;
 }
