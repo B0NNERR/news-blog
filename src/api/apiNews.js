@@ -5,7 +5,7 @@ const BASE_URL = import.meta.env.VITE_NEWS_BASE_API_URL;
 
 export const getNews = async ({
 	page_number = 1,
-	page_size = 20,
+	page_size = 10,
 	category,
 	keywords,
 }) => {
@@ -17,7 +17,22 @@ export const getNews = async ({
 				page_number,
 				page_size,
 				category,
-				keywords,
+				keywords: keywords || null,
+			},
+		});
+
+		return response.data;
+	} catch (error) {
+		console.log(error.message);
+	}
+};
+
+export const getLatestNews = async () => {
+	try {
+		const response = await axios.get(`${BASE_URL}latest-news`, {
+			params: {
+				language: "en",
+				apiKey: API_KEY,
 			},
 		});
 
