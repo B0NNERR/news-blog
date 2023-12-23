@@ -6,4 +6,19 @@
 	box-sizing: border-box;
 	max-height: 1200px;
 	overflow-y: auto;
+	padding-right: 10px;
+}
+
+.banners::-webkit-scrollbar {
+	width: 10px;
+}
+
+.banners::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.banners::-webkit-scrollbar-thumb {
+	background-color: rgb(232, 232, 232);
+	border-radius: 20px;
+	border: 3px solid rgb(232, 232, 232);
 }
