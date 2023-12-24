@@ -4,9 +4,6 @@
 	width: 100%;
 	gap: 12px;
 	box-sizing: border-box;
-	max-height: 1200px;
-	overflow-y: auto;
-	padding-right: 10px;
 }
 
 .banners::-webkit-scrollbar {
@@ -21,4 +18,12 @@
 	background-color: rgb(232, 232, 232);
 	border-radius: 20px;
 	border: 3px solid rgb(232, 232, 232);
+}
+
+@media (min-width: 768px) {
+	.banners {
+		max-height: 1200px;
+		overflow-y: auto;
+		padding-right: 10px;
+	}
 }
